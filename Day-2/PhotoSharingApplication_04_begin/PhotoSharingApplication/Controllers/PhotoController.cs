@@ -74,6 +74,15 @@ namespace PhotoSharingApplication.Controllers
             return View("Delete", photo);
         }
 
+
+        /* 
+         * Two methods in the same .NET framework class cannot have the same name and signature. 
+         * When you have an action called Delete, you cannot have the method with the same name 
+         * because the Delete action for the GET verb already exists and has the same ID parameter. 
+         * To solve this issue, give a different name to the method, which in this case 
+         * is DeleteConfirmed, but use the ActionName annotation to ensure it runs when the 
+         * Delete action is called in an HTTP POST.
+         */
         [HttpPost]
         [ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
