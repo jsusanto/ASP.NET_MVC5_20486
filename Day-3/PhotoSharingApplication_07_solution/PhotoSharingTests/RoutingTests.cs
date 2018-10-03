@@ -13,13 +13,38 @@ namespace PhotoSharingTests
         [TestMethod]
         public void Test_Default_Route_ControllerOnly()
         {
+            /* 
+             * In the Test_Default_Route_ControllerOnly test, create a new var by using 
+             * the following information:
+             * Name: context
+             * Type: FakeHttpContextForRouting
+             * Request URL: ~/ControllerName
+             */
             var context = new FakeHttpContextForRouting(requestUrl: "~/ControllerName");
 
+            /*
+             * Create a new RouteCollection object named routes and pass it to the 
+             * RouteConfig.RegisterRoutes() method.
+             */
             var routes = new RouteCollection();
             RouteConfig.RegisterRoutes(routes);
 
+            /* 
+             * Call the routes.GetRouteData() method to run the test by using the following information:
+             * Return type: RouteData
+             * Return object name: routeData
+             * Method: routes.GetRouteData
+             * HTTP context object: context
+             */
             RouteData routeData = routes.GetRouteData(context);
 
+            /* 
+             * Assert the following facts:
+             * That routeData is not null
+             * That the controller value in routeData is "ControllerName"
+             * That the action value in routeData is "Index"
+             * That the id value in routeData is "UrlParameter.Optional"  
+             */
             Assert.IsNotNull(routeData);
             Assert.AreEqual("ControllerName", routeData.Values["controller"]);
             Assert.AreEqual("Index", routeData.Values["action"]);
