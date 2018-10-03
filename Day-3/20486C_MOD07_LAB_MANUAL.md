@@ -230,13 +230,7 @@ The main tasks for this exercise are as follows:
 
 #### Task 3: Render menus and breadcrumb trails.
 
-1. Render a site menu on the **Index** view by using the following information:
-
-    - Helper: **Html.MvcSiteMap()**
-    - Method: **Menu**
-    - Start From Current Note: **False**
-    - Starting Node in Child Level: **False**
-    - Show Starting Node: **True**
+1. In the **Solution Explorer** pane, expand **Views**, expand **Home**, and then click **Index.csthml**.
 
 2. Render a breadcrumb trail on the **Index** view by using the following information:
 
