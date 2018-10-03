@@ -16,11 +16,35 @@ namespace PhotoSharingTests
         {
             var context = new FakeHttpContextForRouting(requestUrl: "~/ControllerName");
 
+            /* 
+             * Writing a Routing Test
+             * After creating an HTTP context test double, you can write unit tests for each route 
+             * in the routing table. These unit tests adopt the following general phases:
+             */
+
+            /* 
+             * Arrange. 
+             * In the Arrange phase of the test, you can create a new HTTP context from your test 
+             * double class. 
+             * You can set the request URL for this object to be the URL you want to test. 
+             * You can then create a new route collection and call the RouteConfig.RegisterRoutes() method 
+             * in your web application.
+             */
             var routes = new RouteCollection();
             RouteConfig.RegisterRoutes(routes);
 
+            /* 
+             * Act. 
+             * In the Act phase, you can test the routes by calling the GetRouteData() method of the route collection. 
+             * You can then pass the fake HTTP context to this method.
+             */
             RouteData routeData = routes.GetRouteData(context);
 
+            /* 
+             * 	Assert. 
+             * 	In the Assert phase, you can use the RouteData.Values collection to check that 
+             * 	the controller, action and other values are assigned correctly.
+             */
             Assert.IsNotNull(routeData);
             Assert.AreEqual("ControllerName", routeData.Values["controller"]);
             Assert.AreEqual("Index", routeData.Values["action"]);
