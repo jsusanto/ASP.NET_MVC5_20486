@@ -9,6 +9,10 @@ namespace PhotoSharingApplication.Models
 {
     public class UsersContext : DbContext
     {
+        /* 
+         * In the UsersContext class, create a constructor that passes the PhotoAppServices connection 
+         * string to the base class constructor.
+         */
         public UsersContext(): base("PhotoAppServices")
         {
 
