@@ -3,8 +3,8 @@ Training ASP.NET MVC 5 on Advanced Training 1/10/18 - 5/10/18
 
 Paul Foxworthy
 
-Module 1: Exploring ASP.NET MVC 5 \n
-Module 2: Designing ASP.NET MVC 5 Web Applications
+Module 1: Exploring ASP.NET MVC 5 <br />
+Module 2: Designing ASP.NET MVC 5 Web Applications <br />
 Module 3: Developing ASP.NET MVC 5 Models
 Module 4: Developing ASP.NET MVC 5 Controllers
 Module 5: Developing ASP.NET MVC 5 Views
