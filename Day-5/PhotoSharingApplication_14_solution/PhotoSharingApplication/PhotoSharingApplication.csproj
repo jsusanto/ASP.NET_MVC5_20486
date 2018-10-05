@@ -226,6 +226,7 @@
     <Content Include="Images\rockpool.jpg" />
     <Content Include="Images\track.JPG" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\ChatRoom.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />

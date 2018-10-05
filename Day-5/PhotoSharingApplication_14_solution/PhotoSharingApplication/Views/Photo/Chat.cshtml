@@ -28,3 +28,12 @@
 </div>
 
 <div class="clear-floats"></div>
+
+<script type="text/javascript">
+    var username = '@User.Identity.Name';
+
+    var photoid = @Model.PhotoID
+</script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery.signalR-2.2.2.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/signalr/hubs")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/ChatRoom.js")"></script>
