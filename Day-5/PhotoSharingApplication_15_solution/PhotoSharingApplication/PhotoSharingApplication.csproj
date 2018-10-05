@@ -225,6 +225,8 @@
     <Content Include="Images\ripples.jpg" />
     <Content Include="Images\rockpool.jpg" />
     <Content Include="Images\track.JPG" />
+    <None Include="Properties\PublishProfiles\jeffryPhotoSharing - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\jeffryPhotoSharing - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\ChatRoom.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />

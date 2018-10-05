@@ -4,7 +4,7 @@ var infoBox;
 function GetMap() {
 
     //Set up the map
-    map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), { credentials: "AuaEMxoIifUmB4nRIHmNkFjfr_aZMDIJQbVlZ3JlJga_7j1yLy-6cr7nsScDxXq2", zoom: 1 });
+    map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), { credentials: "AoanjosHir5CX4HWczSmyVpiu3qRiQUPVPGa5xHYc8dASwFiv8FczTn7CC_wALwM", zoom: 1 });
 
     //Add the infobox but hide it for now
     infoBox = new Microsoft.Maps.Infobox(new Microsoft.Maps.Location(0, 0), { visible: false, offset: new Microsoft.Maps.Point(0, 20) });
