@@ -195,5 +195,16 @@ namespace PhotoSharingApplication.Controllers
 
             return Content("The picture has been added to your favorites", "text/plain", System.Text.Encoding.Default);
         }
+
+        [Authorize]
+        public ActionResult Chat(int id)
+        {
+            Photo photo = context.FindPhotoById(id);
+
+            if (photo == null)
+                return HttpNotFound();
+
+            return View("Chat", photo);
+        }
     }
 }

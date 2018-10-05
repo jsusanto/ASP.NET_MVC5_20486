@@ -43,6 +43,10 @@
         new AjaxOptions { UpdateTargetId = "addtofavorites", HttpMethod = "GET", InsertionMode = InsertionMode.Replace })
     </div>
 
+    <div id="chataboutthisphoto">
+        @Html.ActionLink("Chat about this photo", "Chat", new { id = Model.PhotoID })
+    </div>
+
 </div>
 
 @Html.Action("_CommentsForPhoto", "Comment", new { PhotoId = Model.PhotoID })
